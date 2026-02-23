@@ -120,3 +120,39 @@ footer {
     color: #777;
     font-size: 0.8rem;
 }
+
+/* Desktop par menu-icon chhupa rahega */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Jab screen 720px se kam ho */
+@media (max-width: 720px) {
+    .menu-icon {
+        display: block; /* Mobile par icon dikhega */
+    }
+
+    #nav-links {
+        display: none; /* Default mein menu band */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Navbar ki height ke hisaab se set karein */
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Aapka theme color */
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #nav-links li {
+        margin: 15px 0;
+    }
+
+    /* Jab JavaScript 'active' class add karega tab menu dikhega */
+    #nav-links.active {
+        display: flex;
+    }
+}
