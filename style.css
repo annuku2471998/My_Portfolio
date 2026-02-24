@@ -129,6 +129,43 @@ footer {
     cursor: pointer;
 }
 
+/* Contact Card (Address Box) Styling - Added for you */
+.contact-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Dark background par shadow */
+    border-right: 5px solid #e11a22; /* Lava Red accent */
+    border-left: 5px solid #e11a22;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    color: #333; /* Text color dark rakha hai background ke contrast ke liye */
+    text-align: left; /* Address left-aligned achha lagta hai */
+}
+
+.contact-card p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.contact-card strong {
+    color: #e11a22;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsiveness for Contact Card */
+@media (max-width: 720px) {
+    .contact-card {
+        padding: 20px;
+        margin: 0 5% 30px 5%;
+    }
+}
+
 /* Jab screen 720px se kam ho */
 @media (max-width: 720px) {
     .menu-icon {
